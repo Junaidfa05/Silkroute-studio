@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textile World - Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/fabric-types">Fabric Types</a> |
+            <a href="/weaving-techniques">Weaving Techniques</a> |
+            <a href="/modern-trends">Modern Trends</a> |
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <form method="POST" action="/contact">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
