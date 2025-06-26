@@ -86,3 +86,36 @@ button {
 button:hover {
     background-color: #ff7733;
 }
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Use flexbox for layout if needed */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive text and padding */
+body {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Adjust layout for small screens */
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
